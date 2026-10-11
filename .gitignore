@@ -1,0 +1,19 @@
+# Aturan global untuk seluruh monorepo.
+# Aturan spesifik ada di backend/.gitignore dan android/.gitignore.
+
+# environment & secrets
+.env
+.env.*
+!.env.example
+local.properties
+*.jks
+*.keystore
+google-services.json
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
