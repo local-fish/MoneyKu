@@ -58,7 +58,6 @@ fun OnboardingScreen(
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.SpaceBetween
     ) {
-        // Top Header
         Row(
             modifier = Modifier.fillMaxWidth(),
             horizontalArrangement = Arrangement.SpaceBetween,
@@ -99,7 +98,6 @@ fun OnboardingScreen(
 
         Spacer(modifier = Modifier.height(20.dp))
 
-        // Illustration Area
         MascotImage(
             type = MascotType.COINS_EXCITED,
             size = 200.dp
@@ -107,7 +105,6 @@ fun OnboardingScreen(
 
         Spacer(modifier = Modifier.height(24.dp))
 
-        // Headline & Description
         Column(
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
@@ -133,7 +130,6 @@ fun OnboardingScreen(
 
             Spacer(modifier = Modifier.height(18.dp))
 
-            // Feature Badges
             FlowRow(
                 horizontalArrangement = Arrangement.Center,
                 verticalArrangement = Arrangement.spacedBy(8.dp),
@@ -148,7 +144,6 @@ fun OnboardingScreen(
 
             Spacer(modifier = Modifier.height(20.dp))
 
-            // Indicator Dots
             Row(
                 horizontalArrangement = Arrangement.spacedBy(6.dp),
                 verticalAlignment = Alignment.CenterVertically
@@ -176,7 +171,6 @@ fun OnboardingScreen(
 
         Spacer(modifier = Modifier.height(28.dp))
 
-        // Action Buttons
         Column(
             horizontalAlignment = Alignment.CenterHorizontally,
             modifier = Modifier.fillMaxWidth()

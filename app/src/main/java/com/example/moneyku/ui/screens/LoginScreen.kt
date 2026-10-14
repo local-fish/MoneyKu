@@ -80,7 +80,6 @@ fun LoginScreen(
         ) {
             Spacer(modifier = Modifier.height(10.dp))
 
-            // App Brand Pill
             Surface(
                 shape = RoundedCornerShape(999.dp),
                 color = MaterialTheme.colorScheme.surface,
@@ -107,7 +106,6 @@ fun LoginScreen(
 
             Spacer(modifier = Modifier.height(16.dp))
 
-            // Mascot Illustration
             MascotImage(
                 type = MascotType.INSPECTING_RECEIPT,
                 size = 140.dp
@@ -132,7 +130,6 @@ fun LoginScreen(
 
             Spacer(modifier = Modifier.height(20.dp))
 
-            // Form Card Container
             Card(
                 shape = RoundedCornerShape(24.dp),
                 colors = CardDefaults.cardColors(
@@ -145,7 +142,6 @@ fun LoginScreen(
                     modifier = Modifier.padding(20.dp),
                     verticalArrangement = Arrangement.spacedBy(14.dp)
                 ) {
-                    // Username Field
                     Column {
                         Text(
                             text = "Username",
@@ -169,7 +165,6 @@ fun LoginScreen(
                         )
                     }
 
-                    // Password Field
                     Column {
                         Text(
                             text = "Password",
@@ -203,7 +198,6 @@ fun LoginScreen(
                         )
                     }
 
-                    // Forgot Password
                     Box(
                         modifier = Modifier.fillMaxWidth(),
                         contentAlignment = Alignment.CenterEnd
@@ -217,7 +211,6 @@ fun LoginScreen(
                         }
                     }
 
-                    // Login Button
                     Button(
                         onClick = onLoginSuccess,
                         shape = RoundedCornerShape(999.dp),
@@ -245,7 +238,6 @@ fun LoginScreen(
 
             Spacer(modifier = Modifier.height(16.dp))
 
-            // Security Encryption Indicator
             Row(
                 verticalAlignment = Alignment.CenterVertically
             ) {
@@ -266,7 +258,6 @@ fun LoginScreen(
 
         Spacer(modifier = Modifier.height(20.dp))
 
-        // Footer Link
         Row(
             verticalAlignment = Alignment.CenterVertically
         ) {

@@ -67,7 +67,7 @@ fun SplitBillScreen(
     onShareClick: () -> Unit = {},
     modifier: Modifier = Modifier
 ) {
-    var selectedTab by remember { mutableIntStateOf(0) } // 0 = Equal, 1 = By Item
+    var selectedTab by remember { mutableIntStateOf(0) }
     var peopleCount by remember { mutableIntStateOf(4) }
     var isTaxAndServiceIncluded by remember { mutableStateOf(true) }
     var showConfirmPaymentDialog by remember { mutableStateOf<SplitMember?>(null) }
@@ -90,7 +90,6 @@ fun SplitBillScreen(
         contentPadding = PaddingValues(16.dp),
         verticalArrangement = Arrangement.spacedBy(16.dp)
     ) {
-        // Top Bar
         item {
             Row(
                 modifier = Modifier.fillMaxWidth(),
@@ -109,7 +108,6 @@ fun SplitBillScreen(
             }
         }
 
-        // Equal vs By Item Tab Row
         item {
             TabRow(
                 selectedTabIndex = selectedTab,
@@ -129,7 +127,6 @@ fun SplitBillScreen(
             }
         }
 
-        // Transaction Summary Header
         item {
             Card(
                 shape = RoundedCornerShape(20.dp),
@@ -183,7 +180,6 @@ fun SplitBillScreen(
 
                     Spacer(modifier = Modifier.height(12.dp))
 
-                    // Stepper for number of people
                     Row(
                         modifier = Modifier.fillMaxWidth(),
                         horizontalArrangement = Arrangement.SpaceBetween,
@@ -219,7 +215,6 @@ fun SplitBillScreen(
             }
         }
 
-        // Members List Section Header
         item {
             Row(
                 modifier = Modifier.fillMaxWidth(),
@@ -231,7 +226,6 @@ fun SplitBillScreen(
             }
         }
 
-        // Members Item Rows
         items(members) { member ->
             Card(
                 shape = RoundedCornerShape(18.dp),
@@ -288,7 +282,6 @@ fun SplitBillScreen(
             }
         }
 
-        // WhatsApp Share & Copy Details
         item {
             Column(verticalArrangement = Arrangement.spacedBy(10.dp)) {
                 OutlinedButton(
@@ -317,7 +310,6 @@ fun SplitBillScreen(
         }
     }
 
-    // Confirm Payment Dialog
     showConfirmPaymentDialog?.let { member ->
         AlertDialog(
             onDismissRequest = { showConfirmPaymentDialog = null },

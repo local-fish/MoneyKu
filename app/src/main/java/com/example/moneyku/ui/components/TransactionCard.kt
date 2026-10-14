@@ -65,7 +65,6 @@ fun TransactionCard(
                 .padding(14.dp),
             verticalAlignment = Alignment.CenterVertically
         ) {
-            // Category Icon Badge
             Box(
                 modifier = Modifier
                     .size(46.dp)
@@ -88,7 +87,6 @@ fun TransactionCard(
 
             Spacer(modifier = Modifier.width(12.dp))
 
-            // Title and Subtitle
             Column(
                 modifier = Modifier.weight(1f)
             ) {
@@ -112,7 +110,6 @@ fun TransactionCard(
 
             Spacer(modifier = Modifier.width(8.dp))
 
-            // Amount
             val amountPrefix = if (item.isExpense) "- " else "+ "
             val amountColor = if (item.isExpense)
                 MaterialTheme.colorScheme.onSurface

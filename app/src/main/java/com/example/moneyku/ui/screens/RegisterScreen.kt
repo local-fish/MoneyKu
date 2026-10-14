@@ -85,7 +85,6 @@ fun RegisterScreen(
             horizontalAlignment = Alignment.CenterHorizontally,
             modifier = Modifier.fillMaxWidth()
         ) {
-            // Top Bar
             Row(
                 modifier = Modifier.fillMaxWidth(),
                 horizontalArrangement = Arrangement.SpaceBetween,
@@ -116,7 +115,6 @@ fun RegisterScreen(
 
             Spacer(modifier = Modifier.height(16.dp))
 
-            // Banner Header Card
             Card(
                 shape = RoundedCornerShape(20.dp),
                 colors = CardDefaults.cardColors(
@@ -157,7 +155,6 @@ fun RegisterScreen(
 
             Spacer(modifier = Modifier.height(20.dp))
 
-            // Form Fields Container
             Card(
                 shape = RoundedCornerShape(24.dp),
                 colors = CardDefaults.cardColors(
@@ -170,7 +167,6 @@ fun RegisterScreen(
                     modifier = Modifier.padding(20.dp),
                     verticalArrangement = Arrangement.spacedBy(14.dp)
                 ) {
-                    // Full Name Field
                     Column {
                         Text(
                             text = "Full Name",
@@ -194,7 +190,6 @@ fun RegisterScreen(
                         )
                     }
 
-                    // Password Field
                     Column {
                         Text(
                             text = "Password",
@@ -229,7 +224,6 @@ fun RegisterScreen(
 
                         Spacer(modifier = Modifier.height(6.dp))
 
-                        // Password Strength Bar
                         LinearProgressIndicator(
                             progress = { 0.9f },
                             modifier = Modifier
@@ -260,7 +254,6 @@ fun RegisterScreen(
                         }
                     }
 
-                    // Confirm Password Field
                     Column {
                         Text(
                             text = "Confirm Password",
@@ -301,7 +294,6 @@ fun RegisterScreen(
                         )
                     }
 
-                    // Terms Checkbox
                     Row(
                         verticalAlignment = Alignment.CenterVertically,
                         modifier = Modifier.padding(top = 4.dp)
@@ -320,7 +312,6 @@ fun RegisterScreen(
                         )
                     }
 
-                    // Sign Up Button
                     Button(
                         onClick = onRegisterSuccess,
                         shape = RoundedCornerShape(999.dp),
@@ -349,7 +340,6 @@ fun RegisterScreen(
 
             Spacer(modifier = Modifier.height(16.dp))
 
-            // Encryption Indicator
             Row(
                 verticalAlignment = Alignment.CenterVertically
             ) {
@@ -370,7 +360,6 @@ fun RegisterScreen(
 
         Spacer(modifier = Modifier.height(20.dp))
 
-        // Footer Link
         Row(
             verticalAlignment = Alignment.CenterVertically
         ) {

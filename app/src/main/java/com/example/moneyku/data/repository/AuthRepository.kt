@@ -14,7 +14,6 @@ class AuthRepository {
     val currentUser: StateFlow<AuthUser?> = _currentUser.asStateFlow()
 
     suspend fun login(usernameOrEmail: String, passwordHash: String): Result<AuthUser> {
-        // Template auth result (Simulasi login lokal sebelum disambungkan ke Supabase Auth)
         if (usernameOrEmail.isNotBlank() && passwordHash.isNotBlank()) {
             val user = AuthUser(
                 email = usernameOrEmail,
@@ -27,7 +26,6 @@ class AuthRepository {
     }
 
     suspend fun register(fullName: String, email: String, passwordHash: String): Result<AuthUser> {
-        // Template auth register
         if (fullName.isNotBlank() && email.isNotBlank() && passwordHash.isNotBlank()) {
             val user = AuthUser(email = email, name = fullName)
             _currentUser.value = user

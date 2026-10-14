@@ -10,10 +10,7 @@ import java.math.BigDecimal
 
 class MoneyRepository(private val db: AppDatabase) {
 
-    /**
-     * Group & Split Transaction helper matching Supabase schema:
-     * group_transactions + split_transactions
-     */
+
     suspend fun createGroupSplitBill(
         userId: String,
         categoryId: String,
