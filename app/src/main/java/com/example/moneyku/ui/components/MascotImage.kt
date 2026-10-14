@@ -16,9 +16,9 @@ import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 
 enum class MascotType {
-    COINS_EXCITED,   // For Onboarding (mascot_coins.png)
-    INSPECTING_RECEIPT, // For Login (mascot_receipt.png)
-    WAVING_PURSE     // For Register / Home (mascot_waving.png)
+    COINS_EXCITED,
+    INSPECTING_RECEIPT,
+    WAVING_PURSE
 }
 
 @Composable

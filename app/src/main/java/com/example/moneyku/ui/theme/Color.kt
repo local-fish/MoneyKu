@@ -2,9 +2,6 @@ package com.example.moneyku.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
-// ==========================================
-// ☀️ LIGHT PALETTE (Luminous Emerald)
-// ==========================================
 val EmeraldPrimaryLight = Color(0xFF10B981)
 val EmeraldOnPrimaryLight = Color(0xFFFFFFFF)
 val EmeraldPrimaryContainerLight = Color(0xFFD1FAE5)
@@ -20,9 +17,7 @@ val SurfaceLowLight = Color(0xFFF2F3FF)
 val OutlineLight = Color(0xFFE2E8F0)
 val OutlineVariantLight = Color(0xFF6C7A71)
 
-// ==========================================
-// 🌙 DARK PALETTE (Obsidian Emerald)
-// ==========================================
+
 val EmeraldPrimaryDark = Color(0xFF10B981)
 val EmeraldPrimaryGlowDark = Color(0xFF34D399)
 val EmeraldPrimaryContainerDark = Color(0xFF064E3B)
@@ -38,9 +33,6 @@ val SurfaceLowDark = Color(0xFF0D1C2D)
 val SurfaceHighDark = Color(0xFF1E2D3E)
 val OutlineDark = Color(0xFF1E293B)
 
-// ==========================================
-// 🚥 SEMANTIC STATUS COLORS
-// ==========================================
 val StatusSuccess = Color(0xFF10B981)
 val StatusSuccessContainer = Color(0xFFECFDF5)
 val StatusWarning = Color(0xFFF59E0B)
