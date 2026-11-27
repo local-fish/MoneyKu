@@ -20,16 +20,16 @@ fun StatusBadge(
 ) {
     val (bgColor, textColor) = when (status.lowercase()) {
         "aman", "lunas", "paid", "settled", "success" -> Pair(
-            Color(0xFFDCFCE7), // StatusSuccessBg
-            Color(0xFF15803D)  // StatusSuccessText
+            Color(0xFFDCFCE7),
+            Color(0xFF15803D)
         )
         "pending", "belum lunas", "hampir habis", "warning" -> Pair(
-            Color(0xFFFEF3C7), // StatusWarningBg
-            Color(0xFFB45309)  // StatusWarningText
+            Color(0xFFFEF3C7),
+            Color(0xFFB45309)
         )
         "over budget", "bahaya", "danger", "overdue" -> Pair(
-            Color(0xFFFEE2E2), // StatusDangerBg
-            Color(0xFFB91C1C)  // StatusDangerText
+            Color(0xFFFEE2E2),
+            Color(0xFFB91C1C)
         )
         else -> Pair(
             Color(0xFFF1F5F9),

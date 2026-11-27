@@ -17,7 +17,7 @@ data class ItemizedSplitRow(
     val itemName: String,
     val quantity: Int = 1,
     val unitPrice: BigDecimal,
-    val assignedMembers: List<String> = emptyList() // member IDs
+    val assignedMembers: List<String> = emptyList()
 )
 
 data class SplitBillData(

@@ -51,8 +51,8 @@ fun HeroBalanceCard(
                 .background(
                     brush = Brush.linearGradient(
                         colors = listOf(
-                            Color(0xFF10B981), // Emerald 500
-                            Color(0xFF047857)  // Emerald 700
+                            Color(0xFF10B981),
+                            Color(0xFF047857)
                         )
                     )
                 )

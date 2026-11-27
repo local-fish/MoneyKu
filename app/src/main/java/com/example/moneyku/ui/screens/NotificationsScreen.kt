@@ -47,7 +47,6 @@ fun NotificationsScreen(
         contentPadding = PaddingValues(16.dp),
         verticalArrangement = Arrangement.spacedBy(14.dp)
     ) {
-        // Header
         item {
             Row(
                 modifier = Modifier.fillMaxWidth(),
@@ -61,7 +60,6 @@ fun NotificationsScreen(
             }
         }
 
-        // Today Section
         item {
             Text("TODAY", style = MaterialTheme.typography.labelSmall.copy(fontWeight = FontWeight.Bold, letterSpacing = 0.5.sp), color = MaterialTheme.colorScheme.onSurfaceVariant)
         }
@@ -99,7 +97,6 @@ fun NotificationsScreen(
             }
         }
 
-        // Yesterday Section
         item {
             Text("YESTERDAY", style = MaterialTheme.typography.labelSmall.copy(fontWeight = FontWeight.Bold, letterSpacing = 0.5.sp), color = MaterialTheme.colorScheme.onSurfaceVariant)
         }

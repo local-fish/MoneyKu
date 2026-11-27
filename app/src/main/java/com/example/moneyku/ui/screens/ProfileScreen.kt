@@ -70,7 +70,6 @@ fun ProfileScreen(
         contentPadding = PaddingValues(16.dp),
         verticalArrangement = Arrangement.spacedBy(16.dp)
     ) {
-        // Top Header
         item {
             Row(
                 modifier = Modifier
@@ -90,7 +89,6 @@ fun ProfileScreen(
             }
         }
 
-        // Profile Avatar Card
         item {
             Card(
                 shape = RoundedCornerShape(22.dp),
@@ -131,7 +129,6 @@ fun ProfileScreen(
             }
         }
 
-        // Stats Summary Pills
         item {
             Row(
                 modifier = Modifier.fillMaxWidth(),
@@ -145,7 +142,6 @@ fun ProfileScreen(
             }
         }
 
-        // Finance & Account Group
         item {
             ProfileSectionHeader("FINANCE & ACCOUNT")
         }
@@ -164,7 +160,6 @@ fun ProfileScreen(
             }
         }
 
-        // Split Bill Group
         item {
             ProfileSectionHeader("SPLIT BILL")
         }
@@ -182,7 +177,6 @@ fun ProfileScreen(
             }
         }
 
-        // Preferences Group
         item {
             ProfileSectionHeader("PREFERENCES & NOTIFICATIONS")
         }
@@ -222,7 +216,6 @@ fun ProfileScreen(
             }
         }
 
-        // Security & Logout
         item {
             ProfileSectionHeader("SECURITY & DATA")
         }

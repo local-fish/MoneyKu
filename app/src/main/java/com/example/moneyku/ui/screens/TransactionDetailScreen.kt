@@ -63,7 +63,6 @@ fun TransactionDetailScreen(
         contentPadding = PaddingValues(16.dp),
         verticalArrangement = Arrangement.spacedBy(16.dp)
     ) {
-        // Top Bar
         item {
             Row(
                 modifier = Modifier.fillMaxWidth(),
@@ -90,7 +89,6 @@ fun TransactionDetailScreen(
             }
         }
 
-        // Transaction Summary Header
         item {
             Column(
                 modifier = Modifier.fillMaxWidth(),
@@ -134,7 +132,6 @@ fun TransactionDetailScreen(
             }
         }
 
-        // Details Metadata Card
         item {
             Card(
                 shape = RoundedCornerShape(20.dp),
@@ -153,7 +150,6 @@ fun TransactionDetailScreen(
             }
         }
 
-        // Split Bill Details Section
         item {
             Card(
                 shape = RoundedCornerShape(20.dp),
@@ -225,7 +221,6 @@ fun TransactionDetailScreen(
             }
         }
 
-        // Payment Receipt & OCR Items
         item {
             Card(
                 shape = RoundedCornerShape(20.dp),
@@ -259,7 +254,6 @@ fun TransactionDetailScreen(
             }
         }
 
-        // Delete / Edit Actions
         item {
             Row(
                 modifier = Modifier.fillMaxWidth(),

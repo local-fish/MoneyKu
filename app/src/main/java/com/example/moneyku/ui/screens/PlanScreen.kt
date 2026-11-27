@@ -44,7 +44,6 @@ fun PlanScreen(
         contentPadding = PaddingValues(16.dp),
         verticalArrangement = Arrangement.spacedBy(16.dp)
     ) {
-        // Header
         item {
             Column {
                 Text(
@@ -61,7 +60,6 @@ fun PlanScreen(
             }
         }
 
-        // Budget Items List
         items(DummyData.budgets) { budget ->
             val progress = (budget.spentAmount.toFloat() / budget.limitAmount.toFloat()).coerceAtMost(1f)
             val progressColor = when (budget.statusText.lowercase()) {
@@ -114,7 +112,6 @@ fun PlanScreen(
 
                     Spacer(modifier = Modifier.height(14.dp))
 
-                    // Progress Bar
                     LinearProgressIndicator(
                         progress = { progress },
                         modifier = Modifier
@@ -127,7 +124,6 @@ fun PlanScreen(
 
                     Spacer(modifier = Modifier.height(10.dp))
 
-                    // Spent vs Limit Amount
                     Row(
                         modifier = Modifier.fillMaxWidth(),
                         horizontalArrangement = Arrangement.SpaceBetween

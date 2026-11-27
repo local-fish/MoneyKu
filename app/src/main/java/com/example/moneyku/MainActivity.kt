@@ -1,6 +1,7 @@
 package com.example.moneyku
 
 import android.os.Bundle
+import androidx.compose.foundation.layout.systemBarsPadding
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxSize
@@ -41,7 +42,9 @@ class MainActivity : ComponentActivity() {
         setContent {
             MoneyKuTheme(darkTheme = false) {
                 Surface(
-                    modifier = Modifier.fillMaxSize(),
+                    modifier = Modifier
+                        .fillMaxSize()
+                        .systemBarsPadding(),
                     color = MaterialTheme.colorScheme.background
                 ) {
                     MoneyKuAppNavigationShell()
@@ -82,6 +85,7 @@ fun MoneyKuAppNavigationShell() {
                 onOpenAddTransaction = { currentDestination = AppDestination.AddTransaction },
                 onOpenTransactionDetail = { id -> currentDestination = AppDestination.TransactionDetail(id) },
                 onOpenNotifications = { currentDestination = AppDestination.Notifications },
+                onOpenSplitBill = { currentDestination = AppDestination.SplitBill },
                 onLogout = { currentDestination = AppDestination.Login }
             )
         }

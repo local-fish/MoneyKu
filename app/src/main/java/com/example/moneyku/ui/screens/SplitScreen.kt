@@ -46,7 +46,6 @@ fun SplitScreen(
         contentPadding = PaddingValues(16.dp),
         verticalArrangement = Arrangement.spacedBy(16.dp)
     ) {
-        // Header
         item {
             Row(
                 modifier = Modifier.fillMaxWidth(),
@@ -81,7 +80,6 @@ fun SplitScreen(
             }
         }
 
-        // Active Split Bills List
         items(DummyData.splitBills) { bill ->
             Card(
                 modifier = Modifier.fillMaxWidth(),

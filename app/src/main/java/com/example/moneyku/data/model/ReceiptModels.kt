@@ -6,8 +6,8 @@ data class ScannedReceiptItem(
     val quantity: Int = 1,
     val unitPrice: Long,
     val totalPrice: Long = quantity * unitPrice,
-    val categoryIcon: String = "cart", // cart, bakery, fruit, coffee
-    val matchConfidencePercent: Int = 98 // e.g. 100%, 98%, 96%
+    val categoryIcon: String = "cart",
+    val matchConfidencePercent: Int = 98
 )
 
 data class MerchantInfo(
@@ -28,7 +28,7 @@ data class ReceiptScanUiState(
         ScannedReceiptItem("3", "Buah Apel Fuji 1kg", 1, 45000L, 45000L, "fruit", 96),
         ScannedReceiptItem("4", "Kopi Cold Brew Latte", 2, 25000L, 50000L, "coffee", 99)
     ),
-    val taxPercentage: Int = 11, // PPN 11%
+    val taxPercentage: Int = 11,
     val isEditingItem: Boolean = false
 ) {
     val subtotal: Long
